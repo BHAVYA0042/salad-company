@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import {useDispatch} from "react-redux";
 import { order_actions } from "../../store/main";
+const setToZero=useSelector((state)=>state.posted.isReset);
+
 import CurrencyRupeeIcon from '@mui/icons-material/CurrencyRupee';
 function Non_veg(props){
   const [quantity,setQuantity]=useState(0);
@@ -18,7 +20,9 @@ function Non_veg(props){
     }));
     setQuantity(quantity+1);
   };
-
+  if(setToZero){
+    setQuantity(0);
+  }
   return(
     <div class="nv_menu card21" id={props.id}>
       <img class="khana" src={props.src} alt="" />

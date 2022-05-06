@@ -1,11 +1,12 @@
 import {React,useState} from "react";
 import { order_actions } from "../../store/main";
-import {useDispatch} from "react-redux";
+import {useDispatch, useSelector} from "react-redux";
 
 import CurrencyRupeeIcon from '@mui/icons-material/CurrencyRupee';
 function Veg(props){
   const [quantity,setQuantity]=useState(0);
   const dispatch=useDispatch();
+  const setToZero=useSelector((state)=>state.posted.isReset);
   
   function handleSub(){
     dispatch(order_actions.removeItemFromCart(props.id));
@@ -20,6 +21,9 @@ function Veg(props){
     }));
     setQuantity(quantity+1)
   };
+  if(setToZero){
+    setQuantity(0);
+  }
   return(
     <div className="menu card1" id={props.id}>
       <img className="khana" src={props.src} alt="" />
