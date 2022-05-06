@@ -1,0 +1,37 @@
+.final{
+  padding: 0.5%;
+  border:solid 1px black;
+}
+.final li{
+  text-decoration: none;
+  float: left;
+  color:black;
+  margin-right:5%;
+  text-align: center;
+  display: inline-block;
+}
+.item1{
+  word-wrap: break-word;
+}
+.cart li button{
+  margin: 0 10px;
+}
+.largeIcon{
+  font-size: 40px;
+  margin: 20px;
+}
+.main_div{
+  padding: 20px;
+}
+.order_item, .order_info{
+  width: 50%;
+  float: left;
+}
+.left li  , .right li{
+  color: black;
+  text-decoration: none;
+}
+.header {
+  background-color:#4caf50;
+  padding: 1rem;
+}

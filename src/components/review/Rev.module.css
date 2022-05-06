@@ -1,0 +1,33 @@
+.container4 {
+  padding: 5% 10% 10% 10%;
+  position: relative;
+  text-align: center;
+}
+
+.cust {
+  margin-top: 5%;
+  align-items: center;
+  text-align: center !important;
+  justify-content: center;
+  border: 2px solid;
+  padding-bottom: 10vw;
+}
+
+.cust img {
+ 
+  width: 40%;
+  border-radius: 50%;
+  padding: 5% 0;
+
+}
+
+.description {
+
+  bottom:0.10vw;
+  margin-bottom: 0.10vw;
+
+
+  color:black;
+}
+
+

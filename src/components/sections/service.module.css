@@ -1,0 +1,53 @@
+.container2 {
+  /* background-image: linear-gradient(#798777,#232323) ; */
+  /* font-family: 'Noto Sans JP', sans-serif; */
+  text-align: center;
+  padding: 5% 2%;
+  border-radius: 0 60px 0 60px;
+}
+
+h2 {
+  margin: 40px 0;
+  text-align: center;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  column-gap: 5%;
+  padding: 5% 5%;
+}
+
+.carding {
+  align-items: center;
+  text-align: center;
+  padding: 5% 10%;
+  border-radius: 10px;
+  border: solid 5px;
+  border-color: black;
+  color: black;
+}
+p {
+  line-height: normal;
+}
+
+#delivery {
+  padding-top: 1%;
+}
+
+.cards img {
+  border-radius: 50%;
+  margin-bottom: 10%;
+}
+
+.order{
+  width: 50%;
+}
+
+.fresh{
+  width: 40%;
+}
+
+.delivery{
+  width: 60%;
+}
