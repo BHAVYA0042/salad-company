@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import {useDispatch,useSelector} from "react-redux";
+import {useDispatch} from "react-redux";
 import { order_actions } from "../../store/main";
 import CurrencyRupeeIcon from '@mui/icons-material/CurrencyRupee';
 function Non_veg(props){

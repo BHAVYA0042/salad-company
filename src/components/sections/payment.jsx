@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { useSelector,useDispatch} from "react-redux";
 import { post_actions } from "../../store/main";
 import Button from "./Button";

@@ -1,14 +1,11 @@
 import {React,useState} from "react";
 import { order_actions } from "../../store/main";
-import {useDispatch,useSelector} from "react-redux";
+import {useDispatch} from "react-redux";
 
 import CurrencyRupeeIcon from '@mui/icons-material/CurrencyRupee';
 function Veg(props){
   const [quantity,setQuantity]=useState(0);
   const dispatch=useDispatch();
-  const cartList=useSelector((state)=>state.ordering.items);
-
-
   
   function handleSub(){
     dispatch(order_actions.removeItemFromCart(props.id));

@@ -6,10 +6,7 @@ import SearchIcon from '@mui/icons-material/Search';
 import { cart_actions } from "../../store/main";
 
 
-
-
-
-function Navigate(props){
+function Navigate(){
   const dispacth=useDispatch();
   const total=useSelector((state)=> state.ordering.totalQuantity);
   const showCart=useSelector((state)=>state.toggle.showCart);

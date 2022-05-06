@@ -1,9 +1,9 @@
-import {React,useState} from "react";
+import {React} from "react";
 import Veg from "./Veg_card";
 import Non_veg from "./Non_veg_card";
 import {data,veg_data} from "./order_data";
 
-function Order(props){
+function Order(){
   function createVegCard(obj){
     return (
       <Veg
