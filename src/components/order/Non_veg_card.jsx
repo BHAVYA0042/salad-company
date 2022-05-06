@@ -4,6 +4,7 @@ import { order_actions } from "../../store/main";
 import CurrencyRupeeIcon from '@mui/icons-material/CurrencyRupee';
 function Non_veg(props){
   const setToZero=useSelector((state)=>state.posted.isReset);
+  console.log(setToZero);
   const [quantity,setQuantity]=useState(0);
   console.log(quantity);
   const dispatch=useDispatch();
@@ -19,9 +20,9 @@ function Non_veg(props){
     }));
     setQuantity(quantity+1);
   };
-  if(setToZero){
-    setQuantity(0);
-  }
+  // if(setToZero){
+  //   setQuantity(0);
+  // }
   return(
     <div class="nv_menu card21" id={props.id}>
       <img class="khana" src={props.src} alt="" />
