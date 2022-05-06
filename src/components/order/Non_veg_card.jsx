@@ -1,10 +1,9 @@
 import React, { useState } from "react";
 import {useDispatch,useSelector} from "react-redux";
 import { order_actions } from "../../store/main";
-const setToZero=useSelector((state)=>state.posted.isReset);
-
 import CurrencyRupeeIcon from '@mui/icons-material/CurrencyRupee';
 function Non_veg(props){
+  const setToZero=useSelector((state)=>state.posted.isReset);
   const [quantity,setQuantity]=useState(0);
   console.log(quantity);
   const dispatch=useDispatch();
