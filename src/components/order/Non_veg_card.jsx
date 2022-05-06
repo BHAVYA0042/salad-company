@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import {useDispatch} from "react-redux";
+import {useDispatch,useSelector} from "react-redux";
 import { order_actions } from "../../store/main";
 const setToZero=useSelector((state)=>state.posted.isReset);
 
