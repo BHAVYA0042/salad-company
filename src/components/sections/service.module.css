@@ -51,3 +51,16 @@ p {
 .delivery{
   width: 60%;
 }
+
+@media only screen and (max-width: 600px) {
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    column-gap: 5%;
+    row-gap: 5%;
+    padding: 5% 5%;
+  }
+  .container2{
+    padding-bottom: 25%;
+  }
+}

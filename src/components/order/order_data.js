@@ -23,7 +23,7 @@ const veg_data=[{
     num:4,
     img:"images\\veg_menu\\Creamy-Vegan-Pasta-Salad-5-720x1080.jpg",
     name:"Creamy Vegan Pasta Salad",
-    description:"<i>al dente </i>farfalle,cherry tomatoes, yellow squash, green beans, and a touch of olives all coated in a tangy, creamy tahini dressing.",
+    description:"Al dente,farfalle,cherry tomatoes, yellow squash, green beans, and a touch of olives all coated in a tangy, creamy tahini dressing.",
     price:300
   },
   {
@@ -37,7 +37,7 @@ const veg_data=[{
     num:6,
     img:"images\\veg_menu\\Skinny-Taco-Salad-recipe.jpg",
     name:"Healthy Taco Salad",
-    description:"Finely chopped sautéed shiitake mushrooms and ground walnuts with black beans,crispy tortilla strips,and a dollop of cilantro lime salad dressing.",
+    description:"Finely chopped sautéed mushrooms with black beans,crispy tortilla strips,and a dollop of cilantro lime salad dressing.",
     price:400
   },
   {
@@ -60,8 +60,8 @@ const data=[
   {
     num:9,
     img:"images\\non_veg menu\\Asian-Sesame-Chicken-Salad-82.jpg",
-    name:"Asian Sesame Chicken Salad",
-    description:"Crispy,fresh romaine,sliced almonds,sesame seeds,tender sliced grilled chicken and wonton strips — all topped with a sweet and tangy Asian sesame vinaigrette.",
+    name:"Asian Chicken Salad",
+    description:"Crispy,fresh romaine,sesame seeds,tender sliced grilled chicken — all topped with a sweet and tangy Asian sesame vinaigrette.",
     price:550
   },
   {

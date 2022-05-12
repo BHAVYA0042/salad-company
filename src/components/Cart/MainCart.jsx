@@ -29,6 +29,7 @@ function Cart(props) {
             <header className={classes.header}>
               <h2>Payment Section</h2>
             </header>
+            <div className="padding">
             <div className={classes.content}>
               {cartList.length===0 && 
               <div>
@@ -59,6 +60,7 @@ function Cart(props) {
                 content={`Pay ${finalAmount}`}
               />}
             {isRazor && <Pay />}
+            </div>
           </div>}
           {isEnd && <PostPay />}
         </div>

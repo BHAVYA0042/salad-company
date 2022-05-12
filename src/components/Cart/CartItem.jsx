@@ -25,9 +25,9 @@ function Item(props){
        
         <li className={classes.item2}><h2><CurrencyRupeeIcon/>{props.price}</h2></li>
         <li className={classes.item3}>
-          <h2> 
+          <h2 className={classes.control}> 
             <button onClick={decrease}>-</button>
-            {props.quantity}
+            <span>{props.quantity}</span>
             <button onClick={increase}>+</button>
           </h2>
         </li>  

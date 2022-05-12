@@ -3,6 +3,9 @@
   position: relative;
   text-align: center;
 }
+.car{
+  padding-bottom: 5%;
+}
 
 .cust {
   margin-top: 5%;
@@ -11,23 +14,34 @@
   justify-content: center;
   border: 2px solid;
   padding-bottom: 10vw;
+  height:400px;
 }
 
 .cust img {
- 
-  width: 40%;
+  margin:20px;
+  width: 20%;
   border-radius: 50%;
-  padding: 5% 0;
-
 }
 
 .description {
-
-  bottom:0.10vw;
-  margin-bottom: 0.10vw;
-
-
+  /* padding:10% 0; */
+  bottom:0.15vw;
   color:black;
 }
 
 
+@media screen and (min-width:600px) and (max-width:1025px) {
+  .cust img {
+    margin:20px;
+    width: 30%;
+    border-radius: 50%;
+  }
+}
+
+@media screen and (max-width:599px) {
+  .cust img {
+    margin:30px;
+    width: 40%;
+    border-radius: 50%;
+  }
+}

@@ -4,6 +4,10 @@ import {useDispatch, useSelector} from "react-redux";
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import SearchIcon from '@mui/icons-material/Search';
 import { cart_actions } from "../../store/main";
+import 'bootstrap/dist/css/bootstrap.css';
+import {Navbar,Container,Nav,NavDropdown,Button} from "react-bootstrap";
+
+import {data,veg_data} from "./../order/order_data";
 
 
 function Navigate(){
@@ -23,63 +27,42 @@ function Navigate(){
 
     <div className = "container1" >
       {showCart && showModal && <Cart onConfirm={hidePay}/>}
-      <nav className="navbar navbar-expand-lg navbar-light">
-      <a className="navbar-brand" href="#">
-        <i className="fas fa-leaf fa-3x"></i>
-        <br />
+      <Navbar className="navbar" expand="lg">
+      <Container fluid className="contain">
+        <Navbar.Brand href="#home" className="mr-0 brand">
+          <i className="fas fa-leaf fa-3x"></i>
+          <br />
           <h3>TheSaladCompany</h3>
-        </a>
-        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span className="navbar-toggler-icon"></span>
-        </button>
-        <div className="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul className="navbar-nav first">
-            <li className="nav-item active dropdown">
-              <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                MENU
-              </a>
-              {/* <div className="dropdown-menu" id="navbarDropdown">
-                <div className="cat1">
-                  <a className="dropdown-item" href="#1">Best Broccoli Salad</a>
-                  <a className="dropdown-item" href="#2">Shredded Brussels Salad</a>
-                  <a className="dropdown-item" href="#3">Rainbow Orzo Salad</a>
-                  <a className="dropdown-item" href="#4">Creamy Vegan Pasta Salad</a>
-                  <a className="dropdown-item" href="#5">Sesame Soba Noodles</a>
-                  <a className="dropdown-item" href="#6">Healthy Taco Salad</a>
-                  <a className="dropdown-item" href="#7">Creamy Greek Salad</a>
-                  <a className="dropdown-item" href="#8">classNameic Caprese Salad</a>
-                </div>
-                <div className="cat2">
-                  <a className="dropdown-item" href="#9">Asian Sesame Chicken Salad</a>
-                  <a className="dropdown-item" href="#10">Chicken Salad with Plums</a>
-                  <a className="dropdown-item" href="#11">Chicken Pasta Salad</a>
-                  <a className="dropdown-item" href="#12">Coronation Chicken Salad</a>
-                  <a className="dropdown-item" href="#13">Scrambled Egg Salad</a>
-                  <a className="dropdown-item" href="#14">Salmon Caesar Salad</a>
-                </div>
+        </Navbar.Brand>
 
-              </div> */}
-            </li>
-            <li className="nav-item active dropdown">
-              <a className="nav-link dropdown-toggle con" href="#cont">
-                CONNECT
-              </a>
-            </li>
-          </ul>
+        <Navbar.Collapse id="basic-navbar-nav" className="nav_link">
+          <Nav >
+            <NavDropdown title="MENU" id="basic-nav-dropdown" >
+              {veg_data.map((item)=>{
+                return(
+                  <NavDropdown.Item href={`#${item.num}`}>{item.name}</NavDropdown.Item>
+                )
+              })}
+              <NavDropdown.Divider />
+              {data.map((item)=>{
+                return(
+                  <NavDropdown.Item href={`#${item.num}`}>{item.name}</NavDropdown.Item>
+                )
+              })}              
+            </NavDropdown>
+            <Nav.Link className="link" href="#cont">CONNECT</Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+        <Nav.Link className="link" id="tog_section" >
+          <ShoppingCartIcon fontSize= 'large' onClick={pinch}/>
+          <div className="cartQuantBack"><p className="cartQuant">{total}</p></div>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" className="toggler" />
+        </Nav.Link>
+        
+        
+      </Container>
+    </Navbar>
 
-          <ul className="navbar-nav ml-auto">
-            <li className="nav-item doosri">
-
-              <SearchIcon fontSize='large'/>
-            </li>
-            <li className="nav-item doosri">
-              <ShoppingCartIcon fontSize= 'large' onClick={pinch}/>
-              <div className="cartQuantBack"><p className="cartQuant">{total}</p></div>
-            </li>
-          </ul>
-
-        </div>
-      </nav>
       <div className="desc">
         <span className="heavy">Delicious food for healthy life.</span>
         <p>We farm,we pluck,we toss & we deliver.</p>

@@ -4,6 +4,7 @@ import Service from "./components/sections/services";
 import Order from "./components/order/order";
 import Review from "./components/review/review";
 import Foot from "./components/sections/footer";
+import Navnew from "./components/sections/newNavigation";
 
 
 
@@ -11,6 +12,7 @@ function App(){
 
   return(
     <div>
+    {/* <Navnew/> */}
     <Navigate/>
     <Service/>
     <Order />
